@@ -1,40 +1,13 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Hepta_Slab, Libre_Franklin, Domine, Outfit } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/lib/seo';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
-const heptaSlab = Hepta_Slab({
-  variable: '--font-hepta-slab',
-  subsets: ['latin'],
-  weight: ['800'],
-});
-
-const libreFranklin = Libre_Franklin({
-  variable: '--font-libre-franklin',
-  subsets: ['latin'],
-  weight: ['500', '600'],
-});
-
-const domine = Domine({
-  variable: '--font-domine',
-  subsets: ['latin'],
-  weight: ['700'],
-});
-
-const outfit = Outfit({
-  variable: '--font-outfit',
-  subsets: ['latin'],
-  weight: ['500'],
+const notoSans = Noto_Sans({
+  variable: '--font-noto-sans',
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -85,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${heptaSlab.variable} ${libreFranklin.variable} ${domine.variable} ${outfit.variable} antialiased`}
+        className={`${notoSans.variable} antialiased`}
       >
         {children}
       </body>

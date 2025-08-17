@@ -9,19 +9,19 @@ export const Footer: React.FC<FooterProps> = ({ locale }) => {
   const translations = {
     en: {
       brand: "Konit",
-      description: "Explore programming insights, development tutorials, and technical deep-dives. Share knowledge about modern software development, web technologies, and daily learnings (TIL)."
+      description: "Discover delicious recipes, cooking techniques, and perfect food pairings. Share culinary knowledge about traditional dishes, modern cooking methods, and the art of food and drink combinations."
     },
     ko: {
       brand: "Konit",
-      description: "프로그래밍 인사이트, 개발 튜토리얼, 기술 심화 내용을 탐험해보세요. 현대 소프트웨어 개발, 웹 기술, 일일 학습(TIL)에 대한 지식을 공유합니다."
+      description: "맛있는 레시피, 요리 기법, 완벽한 음식 페어링을 발견해보세요. 전통 요리, 현대적인 요리 방법, 음식과 음료 조합의 예술에 대한 요리 지식을 공유합니다."
     },
     zh: {
       brand: "Konit",
-      description: "探索编程见解、开发教程和技术深度解析。分享现代软件开发、网络技术和日常学习(TIL)的知识。"
+      description: "发现美味食谱、烹饪技巧和完美的美食搭配。分享传统菜肴、现代烹饪方法和美食饮品搭配艺术的知识。"
     },
     ja: {
       brand: "Konit",
-      description: "プログラミングの洞察、開発チュートリアル、技術的な深掘りを探索してください。現代のソフトウェア開発、ウェブ技術、日々の学習(TIL)に関する知識を共有します。"
+      description: "美味しいレシピ、料理の技法、完璧なフードペアリングを発見してください。伝統料理、現代的な料理方法、食べ物と飲み物の組み合わせの芸術に関する料理の知識を共有します。"
     }
   };
 

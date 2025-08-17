@@ -25,7 +25,7 @@ export default function ContactClient({ locale }: ContactClientProps) {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: t('contact.bloggerName'),
-    jobTitle: 'Software Developer',
+    jobTitle: 'Food Blogger & Chef',
     description: t('contact.aboutText'),
     url: `${siteUrl}/${locale}/contact`,
     email: t('contact.emailAddress'),

@@ -10,12 +10,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-hepta-slab: var(--font-hepta-slab);
-  --font-libre-franklin: var(--font-libre-franklin);
-  --font-domine: var(--font-domine);
-  --font-outfit: var(--font-outfit);
+  --font-sans: var(--font-noto-sans);
+  --font-mono: var(--font-noto-sans);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,29 +24,17 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans), Arial, Helvetica, sans-serif;
 }
 
 /* Custom font classes */
-.font-hepta-slab {
-  font-family: var(--font-hepta-slab), serif;
-}
-
-.font-libre-franklin {
-  font-family: var(--font-libre-franklin), sans-serif;
-}
-
-.font-domine {
-  font-family: var(--font-domine), serif;
-}
-
-.font-outfit {
-  font-family: var(--font-outfit), sans-serif;
+.font-noto-sans {
+  font-family: var(--font-noto-sans), Arial, Helvetica, sans-serif;
 }
 
 /* 마크다운 콘텐츠 스타일링 - 높은 우선순위 */
 .markdown-content {
-  font-family: var(--font-outfit), Arial, Helvetica, sans-serif !important;
+  font-family: var(--font-noto-sans), Arial, Helvetica, sans-serif !important;
   color: #271c1a !important;
   line-height: 1.6 !important;
 }
@@ -61,7 +45,7 @@ body {
 .markdown-content h4,
 .markdown-content h5,
 .markdown-content h6 {
-  font-family: var(--font-domine), serif !important;
+  font-family: var(--font-noto-sans), Arial, Helvetica, sans-serif !important;
   font-weight: 700 !important;
   color: #271c1a !important;
   margin-top: 2rem !important;

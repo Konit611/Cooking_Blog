@@ -15,24 +15,24 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
   // Load translations for metadata
   const translations = {
     en: {
-      title: "Tech Blog - Development Insights & Daily Learning",
-      description: "Explore programming insights, coding tutorials, and technical deep-dives. Share knowledge about software development, web technologies, and daily learnings (TIL).",
-      keywords: "tech blog, programming, software development, coding tutorials, TIL, web development, technical insights, developer blog, programming tips"
+      title: "Recipe & Food Blog - Culinary Adventures & Cooking Tips",
+      description: "Discover delicious recipes, cooking techniques, and perfect food pairings. Share culinary knowledge about traditional dishes, modern cooking methods, and the art of food and drink combinations.",
+      keywords: "recipe blog, food blog, cooking, culinary, recipes, food pairings, cooking tips, food photography, chef blog, culinary adventures"
     },
     ko: {
-      title: "기술 블로그 - 개발 인사이트와 일일 학습",
-      description: "프로그래밍 인사이트, 코딩 튜토리얼, 기술 심화 내용을 탐험하세요. 소프트웨어 개발, 웹 기술, 일일 학습(TIL)에 대한 지식을 공유합니다.",
-      keywords: "기술 블로그, 프로그래밍, 소프트웨어 개발, 코딩 튜토리얼, TIL, 웹 개발, 기술 인사이트, 개발자 블로그, 프로그래밍 팁"
+      title: "레시피 & 푸드 블로그 - 요리 모험과 요리 팁",
+      description: "맛있는 레시피, 요리 기법, 완벽한 음식 페어링을 발견해보세요. 전통 요리, 현대적인 요리 방법, 음식과 음료 조합의 예술에 대한 요리 지식을 공유합니다.",
+      keywords: "레시피 블로그, 푸드 블로그, 요리, 요리법, 레시피, 음식 페어링, 요리 팁, 푸드 사진, 요리사 블로그, 요리 모험"
     },
     zh: {
-      title: "技术博客 - 开发见解与日常学习",
-      description: "探索编程见解、编程教程和技术深度解析。分享软件开发、网络技术和日常学习(TIL)的知识。",
-      keywords: "技术博客, 编程, 软件开发, 编程教程, 今日所学, 网页开发, 技术见解, 开发者博客, 编程技巧"
+      title: "食谱与美食博客 - 烹饪冒险与烹饪技巧",
+      description: "发现美味食谱、烹饪技巧和完美的美食搭配。分享传统菜肴、现代烹饪方法和美食饮品搭配艺术的知识。",
+      keywords: "食谱博客, 美食博客, 烹饪, 美食, 食谱, 美食搭配, 烹饪技巧, 美食摄影, 厨师博客, 烹饪冒险"
     },
     ja: {
-      title: "技術ブログ - 開発インサイトと日々の学習",
-      description: "プログラミングの洞察、コーディングチュートリアル、技術的な深掘りを探索してください。ソフトウェア開発、ウェブ技術、日々の学習(TIL)に関する知識を共有します。",
-      keywords: "技術ブログ, プログラミング, ソフトウェア開発, コーディングチュートリアル, TIL, ウェブ開発, 技術的洞察, 開発者ブログ, プログラミングのヒント"
+      title: "レシピ＆フードブログ - 料理の冒険と料理のコツ",
+      description: "美味しいレシピ、料理の技法、完璧なフードペアリングを発見してください。伝統料理、現代的な料理方法、食べ物と飲み物の組み合わせの芸術に関する料理の知識を共有します。",
+      keywords: "レシピブログ, フードブログ, 料理, 料理法, レシピ, フードペアリング, 料理のコツ, フード写真, シェフブログ, 料理の冒険"
     }
   };
 
@@ -43,9 +43,9 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
     title: t.title,
     description: t.description,
     keywords: t.keywords,
-    authors: [{ name: 'Alex Chen' }],
-    creator: 'Alex Chen',
-    publisher: 'Tech Blog',
+    authors: [{ name: '김 요리사' }],
+    creator: '김 요리사',
+    publisher: 'Recipe & Food Blog',
     robots: {
       index: true,
       follow: true,
@@ -76,7 +76,7 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
       title: t.title,
       description: t.description,
       url: `/${locale}`,
-      siteName: 'Tech Blog',
+      siteName: 'Recipe & Food Blog',
       locale: locale,
       type: 'website',
       images: [
@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: HomePageProps): Promise<Metad
     },
     twitter: {
       card: 'summary_large_image',
-      creator: '@developer',
+      creator: '@foodblogger',
       title: t.title,
       description: t.description,
       images: ['/images/og-home.jpg'],
@@ -118,22 +118,22 @@ export default async function HomePage({ params }: HomePageProps) {
     const featuredPosts = posts.slice(0, 3);
 
     // Generate JSON-LD structured data for WebSite
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://techblog.com';
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://recipefoodblog.com';
     const jsonLd = {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'Tech Blog',
-      description: 'Explore programming insights, coding tutorials, and technical deep-dives. Share knowledge about software development, web technologies, and daily learnings.',
+      name: 'Recipe & Food Blog',
+      description: 'Discover delicious recipes, cooking techniques, and perfect food pairings. Share culinary knowledge about traditional dishes, modern cooking methods, and the art of food and drink combinations.',
       url: `${siteUrl}/${locale}`,
       inLanguage: locale,
       author: {
         '@type': 'Person',
-        name: 'Alex Chen',
+        name: '김 요리사',
         url: `${siteUrl}/${locale}/contact`
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Tech Blog',
+        name: 'Recipe & Food Blog',
         logo: {
           '@type': 'ImageObject',
           url: `${siteUrl}/images/logo.png`
@@ -143,26 +143,26 @@ export default async function HomePage({ params }: HomePageProps) {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
-          urlTemplate: `${siteUrl}/${locale}/blog?search={search_term_string}`
+          urlTemplate: `${siteUrl}/${locale}/recipes?search={search_term_string}`
         },
         'query-input': 'required name=search_term_string'
       },
       mainEntity: {
         '@type': 'Blog',
-        name: 'Tech Blog',
-        description: 'Latest development insights and technical tutorials',
-        url: `${siteUrl}/${locale}/blog`,
+        name: 'Recipe & Food Blog',
+        description: 'Latest culinary insights and cooking tutorials',
+        url: `${siteUrl}/${locale}/recipes`,
         blogPost: featuredPosts.slice(0, 3).map(post => ({
           '@type': 'BlogPosting',
           headline: post.title,
           description: post.excerpt,
-          url: `${siteUrl}/${locale}/blog/${post.slug}`,
+          url: `${siteUrl}/${locale}/recipes/${post.slug}`,
           datePublished: post.date,
           author: {
             '@type': 'Person',
-            name: post.author || 'Alex Chen'
+            name: post.author || '김 요리사'
           },
-          image: post.coverImage ? `${siteUrl}${post.coverImage}` : `${siteUrl}/images/og-blog.jpg`
+          image: post.coverImage ? `${siteUrl}${post.coverImage}` : `${siteUrl}/images/og-recipes.jpg`
         }))
       }
     };

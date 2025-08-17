@@ -4,6 +4,7 @@
     "about": "概要",
     "blog": "ブログ",
     "recipes": "レシピ",
+    "pairings": "ペアリング",
     "portfolio": "ポートフォリオ",
     "career": "キャリア",
     "contact": "お問い合わせ",
@@ -55,49 +56,61 @@
     "inCategory": "「{{category}}」カテゴリー",
     "paginationInfo": "{{currentPage}}/{{totalPages}}ページ • {{startIndex}}-{{endIndex}}/{{total}}件のレシピを表示"
   },
+  "pairings": {
+    "title": "ペアリング",
+    "subtitle": "完璧な食べ物と飲み物の組み合わせ",
+    "allPairings": "すべてのペアリング",
+    "noPairingsAvailable": "利用可能なペアリングがありません",
+    "noPairingsInCategory": "{{category}}でペアリングが見つかりません",
+    "readTime": "{{time}}分で読めます",
+    "readMore": "続きを読む",
+    "showingPairings": "{{count}}件のペアリング",
+    "inCategory": "「{{category}}」カテゴリー",
+    "paginationInfo": "{{currentPage}}/{{totalPages}}ページ • {{startIndex}}-{{endIndex}}/{{total}}件のペアリングを表示"
+  },
   "categories": {
     "allCategories": "すべてのカテゴリー",
     "postsInCategory": "{{category}}カテゴリーの投稿",
     "noPostsInCategory": "このカテゴリーで投稿が見つかりません"
   },
   "contact": {
-    "title": "お問い合わせ - 技術ポートフォリオ",
-    "description": "開発プロジェクト、コラボレーションの機会、または技術的な議論についてお気軽にお問い合わせください。",
-    "keywords": "お問い合わせ, 開発者, 技術ポートフォリオ, コラボレーション, ソフトウェア開発",
+    "title": "お問い合わせ - レシピ＆フードブログ",
+    "description": "レシピのコラボレーション、料理のコツ、フード写真、または料理の議論についてお気軽にお問い合わせください。",
+    "keywords": "お問い合わせ, フードブロガー, レシピコラボレーション, 料理のコツ, フード写真, 料理コンサルティング",
     "heading": "お問い合わせ",
-    "subtitle": "次のプロジェクトやコラボレーションの機会について話し合いましょう！",
+    "subtitle": "料理のアイデアやコラボレーションの機会について話し合いましょう！",
     "info": {
       "title": "連絡先情報"
     },
     "name": "名前",
-    "bloggerName": "アレックス・チェン",
+    "bloggerName": "キムシェフ",
     "email": "メール",
-    "emailAddress": "hello@techportfolio.com",
+    "emailAddress": "hello@recipefoodblog.com",
     "location": "所在地",
-    "locationText": "韓国ソウル",
+    "locationText": "日本釧路",
     "social": "ソーシャルメディア",
-    "twitter": "developer",
-    "twitterUrl": "https://twitter.com/developer",
-    "instagram": "alexdev",
-    "instagramUrl": "https://instagram.com/alexdev",
-    "github": "alexchen",
-    "githubUrl": "https://github.com/alexchen",
-    "linkedin": "alexchen-dev",
-    "linkedinUrl": "https://linkedin.com/in/alexchen-dev",
+    "twitter": "foodblogger",
+    "twitterUrl": "https://twitter.com/foodblogger",
+    "instagram": "konitcook",
+    "instagramUrl": "https://instagram.com/konitcook",
+    "github": "konitcook",
+    "githubUrl": "https://github.com/konitcook",
+    "linkedin": "konit-cook",
+    "linkedinUrl": "https://linkedin.com/in/konit-cook",
     "about": "自己紹介",
-    "aboutText": "こんにちは！私はソウル在住の情熱的なフルスタック開発者のアレックスです。Webテクノロジー、モバイルアプリ、クラウドソリューションを専門とし、6年以上のソフトウェア開発経験があります。\n\n実際の問題を解決する革新的なソリューションを構築することが大好きです。React、Node.js、Python、最新のWebテクノロジーに関する専門知識を持っています。常に新しいテクノロジーを学び、開発者コミュニティと知識を共有することを心がけています。\n\nコーディングをしていない時は、新しい技術トレンドを探求したり、オープンソースプロジェクトに貢献したり、意欲的な開発者をメンタリングしたりしています。",
-    "languages": "プログラミング言語",
+    "aboutText": "こんにちは！私は日本釧路在住の情熱的なフードブロガーのキムシェフです。伝統的な韓国料理、現代的な料理技法、そして完璧な食べ物と飲み物の組み合わせを専門とし、8年以上の料理経験があります。\n\n美味しく健康的な料理を通じて人々の日常生活をより豊かにすることが大好きです。韓国伝統料理、フュージョン料理、ベーキング、ワインペアリングに関する専門知識を持っています。常に新しいレシピを開発し、料理コミュニティと知識を共有することを心がけています。\n\n料理をしていない時は、新しい料理トレンドを探求したり、フード写真を撮ったり、意欲的なシェフをメンタリングしたりしています。",
+    "languages": "料理言語",
     "language": {
-      "en": "JavaScript/TypeScript",
-      "ko": "Python",
-      "zh": "Java",
-      "ja": "Go"
+      "en": "韓国伝統料理",
+      "ko": "フュージョン料理",
+      "zh": "ベーキング",
+      "ja": "ワインペアリング"
     },
-    "interests": "技術的関心事",
-    "interestsList": "フルスタック開発、クラウドコンピューティング、DevOps、機械学習、オープンソース、モバイル開発、システムアーキテクチャ、API設計",
+    "interests": "料理的関心事",
+    "interestsList": "韓国伝統料理、フュージョン料理、ベーキング、ワインペアリング、フードスタイリング、フード写真、健康的な料理、ベジタリアン料理",
     "cta": {
-      "title": "一緒に素晴らしいものを作りましょう！",
-      "description": "プロジェクトのアイデアがある、技術的なコンサルテーションが必要、またはエキサイティングなコラボレーションをしたい場合は、ぜひご連絡ください。",
+      "title": "一緒に美味しい料理を作りましょう！",
+      "description": "レシピのアイデアがある、料理のコンサルテーションが必要、またはエキサイティングなコラボレーションをしたい場合は、ぜひご連絡ください。",
       "button": "メールを送る"
     }
   },
@@ -108,15 +121,15 @@
     "allRightsReserved": "全ての権利を保有しています。",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
-    "copyright": "© {{year}} 技術ポートフォリオ。全ての権利を保有しています。",
+    "copyright": "© {{year}} レシピ＆フードブログ。全ての権利を保有しています。",
     "followUs": "フォロー",
     "newsletter": "ニュースレター",
     "subscribe": "購読",
     "emailPlaceholder": "メールアドレスを入力"
   },
   "meta": {
-    "defaultTitle": "技術ポートフォリオ - フルスタック開発者",
-    "defaultDescription": "開発プロジェクト、技術記事、プロフェッショナルな歩みを探索してください。Web開発、モバイルアプリ、クラウド技術における革新的なソリューションを発見してください。",
-    "keywords": "技術ポートフォリオ, フルスタック開発者, Web開発, ソフトウェアエンジニアリング, React, Node.js, プログラミング, テクノロジー"
+    "defaultTitle": "レシピ＆フードブログ - シェフキム",
+    "defaultDescription": "美味しいレシピ、料理の技法、完璧なフードペアリングを探索してください。韓国伝統料理、現代的な料理方法、食べ物と飲み物の組み合わせの芸術を発見してください。",
+    "keywords": "レシピブログ, フードブログ, シェフ, 韓国伝統料理, ワインペアリング, 料理の技法, フード写真, 料理"
   }
 } 
