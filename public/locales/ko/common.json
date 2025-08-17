@@ -4,6 +4,7 @@
     "about": "소개",
     "blog": "블로그",
     "recipes": "레시피",
+    "pairings": "페어링",
     "portfolio": "포트폴리오",
     "career": "경력",
     "contact": "연락처",
@@ -54,6 +55,18 @@
     "showingRecipes": "{{count}}개 레시피",
     "inCategory": "\"{{category}}\" 카테고리",
     "paginationInfo": "{{currentPage}}/{{totalPages}} 페이지 • {{startIndex}}-{{endIndex}}/{{total}} 레시피"
+  },
+  "pairings": {
+    "title": "페어링",
+    "subtitle": "완벽한 음식과 음료 조합",
+    "allPairings": "모든 페어링",
+    "noPairingsAvailable": "사용할 수 있는 페어링이 없습니다",
+    "noPairingsInCategory": "{{category}}에서 페어링을 찾을 수 없습니다",
+    "readTime": "{{time}}분 읽기",
+    "readMore": "더 읽기",
+    "showingPairings": "{{count}}개 페어링",
+    "inCategory": "\"{{category}}\" 카테고리",
+    "paginationInfo": "{{currentPage}}/{{totalPages}} 페이지 • {{startIndex}}-{{endIndex}}/{{total}} 페어링"
   },
   "categories": {
     "allCategories": "모든 카테고리",

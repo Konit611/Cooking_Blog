@@ -13,38 +13,38 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
   // Load translations for metadata
   const translations = {
     en: {
-      title: "Contact - Tech Portfolio",
-      description: "Get in touch with me for development projects, collaboration opportunities, or technical discussions. Let's build something amazing together.",
-      keywords: "contact developer, tech portfolio contact, software developer contact, development collaboration, tech consultation"
+      title: "Contact - Recipe & Food Blog",
+      description: "Get in touch with me for recipe collaborations, cooking tips, food photography, or culinary discussions. Let's share the joy of cooking together.",
+      keywords: "contact food blogger, recipe collaboration, cooking tips contact, food photography, culinary consultation"
     },
     ko: {
-      title: "연락처 - 기술 포트폴리오",
-      description: "개발 프로젝트, 협업 기회, 또는 기술적 논의를 위해 연락주세요. 함께 멋진 것을 만들어봅시다.",
-      keywords: "개발자 연락처, 기술 포트폴리오 연락처, 소프트웨어 개발자 연락처, 개발 협업, 기술 컨설팅"
+      title: "연락처 - 레시피 & 푸드 블로그",
+      description: "레시피 협업, 요리 팁, 푸드 사진, 또는 요리 논의를 위해 연락주세요. 함께 요리의 즐거움을 나누어봅시다.",
+      keywords: "푸드 블로거 연락처, 레시피 협업, 요리 팁 연락처, 푸드 사진, 요리 컨설팅"
     },
     zh: {
-      title: "联系我们 - 技术作品集",
-      description: "联系我进行开发项目、合作机会或技术讨论。让我们一起创建令人惊叹的东西。",
-      keywords: "联系开发者, 技术作品集联系, 软件开发者联系, 开发合作, 技术咨询"
+      title: "联系我们 - 食谱与美食博客",
+      description: "联系我进行食谱合作、烹饪技巧、美食摄影或烹饪讨论。让我们一起分享烹饪的乐趣。",
+      keywords: "联系美食博主, 食谱合作, 烹饪技巧联系, 美食摄影, 烹饪咨询"
     },
     ja: {
-      title: "お問い合わせ - 技術ポートフォリオ",
-      description: "開発プロジェクト、コラボレーションの機会、または技術的な議論についてお気軽にお問い合わせください。一緒に素晴らしいものを作りましょう。",
-      keywords: "開発者連絡先, 技術ポートフォリオ連絡先, ソフトウェア開発者連絡先, 開発コラボレーション, 技術コンサルティング"
+      title: "お問い合わせ - レシピ＆フードブログ",
+      description: "レシピのコラボレーション、料理のコツ、フード写真、または料理の議論についてお気軽にお問い合わせください。一緒に料理の楽しさを共有しましょう。",
+      keywords: "フードブロガー連絡先, レシピコラボレーション, 料理のコツ連絡先, フード写真, 料理コンサルティング"
     }
   };
 
   const t = translations[locale as keyof typeof translations] || translations.en;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://techportfolio.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://recipefoodblog.com';
   const canonicalUrl = `${siteUrl}/${locale}/contact`;
 
   return {
     title: t.title,
     description: t.description,
     keywords: t.keywords,
-    authors: [{ name: 'Developer' }],
-    creator: 'Developer',
-    publisher: 'Tech Portfolio',
+    authors: [{ name: 'Food Blogger' }],
+    creator: 'Food Blogger',
+    publisher: 'Recipe & Food Blog',
     metadataBase: new URL(siteUrl),
     alternates: {
       canonical: canonicalUrl,
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
       title: t.title,
       description: t.description,
       url: canonicalUrl,
-      siteName: 'Tech Portfolio',
+      siteName: 'Recipe & Food Blog',
       locale: locale,
       type: 'website',
       images: [
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
       card: 'summary_large_image',
       title: t.title,
       description: t.description,
-      creator: '@developer',
+      creator: '@foodblogger',
       images: [`${siteUrl}/images/og-contact.jpg`],
     },
     robots: {

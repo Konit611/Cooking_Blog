@@ -17,6 +17,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
         home: "Home",
         blog: "Blog",
         recipes: "Recipes",
+        pairings: "Pairings",
         contact: "Contact"
       }
     },
@@ -26,6 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
         home: "홈",
         blog: "블로그",
         recipes: "레시피",
+        pairings: "페어링",
         contact: "연락처"
       }
     },
@@ -35,6 +37,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
         home: "首页",
         blog: "博客",
         recipes: "食谱",
+        pairings: "搭配",
         contact: "联系"
       }
     },
@@ -44,6 +47,7 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
         home: "ホーム",
         blog: "ブログ",
         recipes: "レシピ",
+        pairings: "ペアリング",
         contact: "お問い合わせ"
       }
     }
@@ -78,6 +82,11 @@ export const Header: React.FC<HeaderProps> = ({ locale }) => {
             <Link href={`/${locale}/recipes`}>
               <div className="relative w-fit mt-[-1.00px] font-libre-franklin font-medium text-black text-[20px] tracking-[-0.28px] leading-8 whitespace-nowrap hover:text-gray-600 transition-colors cursor-pointer">
                 {t.nav.recipes}
+              </div>
+            </Link>
+            <Link href={`/${locale}/pairings`}>
+              <div className="relative w-fit mt-[-1.00px] font-libre-franklin font-medium text-black text-[20px] tracking-[-0.28px] leading-8 whitespace-nowrap hover:text-gray-600 transition-colors cursor-pointer">
+                {t.nav.pairings}
               </div>
             </Link>
             <Link href={`/${locale}/contact`}>

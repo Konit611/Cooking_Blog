@@ -14,6 +14,7 @@ export function Navigation() {
   const isHome = pathname === `/${locale}`;
   const isBlog = pathname.includes(`/${locale}/blog`);
   const isRecipes = pathname.includes(`/${locale}/recipes`);
+  const isPairings = pathname.includes(`/${locale}/pairings`);
   const isContact = pathname.includes(`/${locale}/contact`);
 
   return (
@@ -58,6 +59,16 @@ export function Navigation() {
               }`}
             >
               {t('navigation.recipes')}
+            </a>
+            <a
+              href={`/${locale}/pairings`}
+              className={`font-medium transition-colors ${
+                isPairings 
+                  ? 'text-purple-600 border-b-2 border-purple-600 pb-1' 
+                  : 'text-gray-700 hover:text-purple-600'
+              }`}
+            >
+              {t('navigation.pairings')}
             </a>
             <a
               href={`/${locale}/contact`}
@@ -122,6 +133,16 @@ export function Navigation() {
               }`}
             >
               {t('navigation.recipes')}
+            </a>
+            <a
+              href={`/${locale}/pairings`}
+              className={`font-medium transition-colors ${
+                isPairings 
+                  ? 'text-purple-600 border-l-4 border-purple-600 pl-3' 
+                  : 'text-gray-700 hover:text-purple-600'
+              }`}
+            >
+              {t('navigation.pairings')}
             </a>
             <a
               href={`/${locale}/blog`}

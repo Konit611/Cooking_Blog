@@ -1,0 +1,77 @@
+[
+  {
+    "id": "wine-pairings",
+    "name": {
+      "en": "Wine Pairings",
+      "ko": "와인 페어링",
+      "zh": "葡萄酒搭配",
+      "ja": "ワインペアリング"
+    },
+    "description": {
+      "en": "Perfect wine and food combinations for every occasion",
+      "ko": "모든 상황에 맞는 완벽한 와인과 음식 조합",
+      "zh": "适合各种场合的完美葡萄酒和美食搭配",
+      "ja": "あらゆるシーンにぴったりの完璧なワインと料理の組み合わせ"
+    }
+  },
+  {
+    "id": "drink-pairings",
+    "name": {
+      "en": "Drink Pairings",
+      "ko": "음료 페어링",
+      "zh": "饮品搭配",
+      "ja": "ドリンクペアリング"
+    },
+    "description": {
+      "en": "Cocktails, beers, and non-alcoholic drinks that complement your meals",
+      "ko": "식사를 돋우는 칵테일, 맥주, 무알콜 음료",
+      "zh": "为您的餐点增色的鸡尾酒、啤酒和无酒精饮料",
+      "ja": "料理を引き立てるカクテル、ビール、ノンアルコールドリンク"
+    }
+  },
+  {
+    "id": "dessert-pairings",
+    "name": {
+      "en": "Dessert Pairings",
+      "ko": "디저트 페어링",
+      "zh": "甜点搭配",
+      "ja": "デザートペアリング"
+    },
+    "description": {
+      "en": "Sweet endings that perfectly complement your main dishes",
+      "ko": "메인 요리를 완벽하게 보완하는 달콤한 마무리",
+      "zh": "完美搭配主菜的甜蜜结尾",
+      "ja": "メインディッシュを完璧に引き立てる甘い締めくくり"
+    }
+  },
+  {
+    "id": "seasonal-pairings",
+    "name": {
+      "en": "Seasonal Pairings",
+      "ko": "계절별 페어링",
+      "zh": "季节性搭配",
+      "ja": "季節別ペアリング"
+    },
+    "description": {
+      "en": "Food and drink combinations that celebrate each season",
+      "ko": "각 계절을 축하하는 음식과 음료 조합",
+      "zh": "庆祝每个季节的美食和饮品搭配",
+      "ja": "各季節を祝う食べ物と飲み物の組み合わせ"
+    }
+  },
+  {
+    "id": "regional-pairings",
+    "name": {
+      "en": "Regional Pairings",
+      "ko": "지역별 페어링",
+      "zh": "地区性搭配",
+      "ja": "地域別ペアリング"
+    },
+    "description": {
+      "en": "Traditional food and drink combinations from around the world",
+      "ko": "전 세계의 전통적인 음식과 음료 조합",
+      "zh": "来自世界各地的传统美食和饮品搭配",
+      "ja": "世界中の伝統的な食べ物と飲み物の組み合わせ"
+    }
+  }
+] 

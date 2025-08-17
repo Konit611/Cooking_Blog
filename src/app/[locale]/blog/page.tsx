@@ -15,38 +15,38 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
   // Load translations for metadata
   const translations = {
     en: {
-      title: "Tech Blog - Latest Development Insights and TIL",
-      description: "Explore development insights, coding tutorials, and daily learnings. Discover programming tips, tech trends, and practical solutions for modern software development.",
-      keywords: "tech blog, programming tutorials, development insights, coding tips, TIL, software engineering, web development, technical articles"
+      title: "Food Blog - Latest Recipe Discoveries and Cooking Tips",
+      description: "Explore delicious recipes, cooking techniques, and culinary adventures. Discover cooking tips, food trends, and practical solutions for home cooking.",
+      keywords: "food blog, recipe tutorials, cooking insights, cooking tips, food photography, culinary arts, home cooking, food articles"
     },
     ko: {
-      title: "기술 블로그 - 최신 개발 인사이트와 TIL",
-      description: "개발 인사이트, 코딩 튜토리얼, 일일 학습 내용을 탐험해보세요. 프로그래밍 팁, 기술 트렌드, 현대 소프트웨어 개발을 위한 실용적인 해결책을 발견하세요.",
-      keywords: "기술 블로그, 프로그래밍 튜토리얼, 개발 인사이트, 코딩 팁, TIL, 소프트웨어 엔지니어링, 웹 개발, 기술 아티클"
+      title: "푸드 블로그 - 최신 레시피 발견과 요리 팁",
+      description: "맛있는 레시피, 요리 기법, 요리 모험을 탐험해보세요. 요리 팁, 음식 트렌드, 가정 요리를 위한 실용적인 해결책을 발견하세요.",
+      keywords: "푸드 블로그, 레시피 튜토리얼, 요리 인사이트, 요리 팁, 푸드 사진, 요리 예술, 가정 요리, 음식 아티클"
     },
     zh: {
-      title: "技术博客 - 最新开发见解与今日所学",
-      description: "探索开发见解、编程教程和日常学习内容。发现编程技巧、技术趋势和现代软件开发的实用解决方案。",
-      keywords: "技术博客, 编程教程, 开发见解, 编程技巧, 今日所学, 软件工程, 网页开发, 技术文章"
+      title: "美食博客 - 最新食谱发现与烹饪技巧",
+      description: "探索美味食谱、烹饪技巧和美食冒险。发现烹饪技巧、美食趋势和家庭烹饪的实用解决方案。",
+      keywords: "美食博客, 食谱教程, 烹饪见解, 烹饪技巧, 美食摄影, 烹饪艺术, 家庭烹饪, 美食文章"
     },
     ja: {
-      title: "技術ブログ - 最新の開発インサイトとTIL",
-      description: "開発インサイト、プログラミングチュートリアル、日々の学習内容を探索してください。プログラミングのヒント、技術トレンド、現代のソフトウェア開発のための実用的なソリューションを発見してください。",
-      keywords: "技術ブログ, プログラミングチュートリアル, 開発インサイト, コーディングのヒント, TIL, ソフトウェアエンジニアリング, ウェブ開発, 技術記事"
+      title: "フードブログ - 最新レシピ発見と料理のコツ",
+      description: "美味しいレシピ、料理の技法、料理の冒険を探索してください。料理のコツ、フードトレンド、家庭料理のための実用的なソリューションを発見してください。",
+      keywords: "フードブログ, レシピチュートリアル, 料理インサイト, 料理のコツ, フード写真, 料理アート, 家庭料理, フード記事"
     }
   };
 
   const t = translations[locale as keyof typeof translations] || translations.en;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://techblog.com';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://recipefoodblog.com';
   const canonicalUrl = `${siteUrl}/${locale}/blog`;
 
   return {
     title: t.title,
     description: t.description,
     keywords: t.keywords,
-    authors: [{ name: 'Alex Chen' }],
-    creator: 'Alex Chen',
-    publisher: 'Tech Blog',
+    authors: [{ name: 'Food Blogger' }],
+    creator: 'Food Blogger',
+    publisher: 'Food Blog',
     metadataBase: new URL(siteUrl),
     alternates: {
       canonical: canonicalUrl,
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       title: t.title,
       description: t.description,
       url: canonicalUrl,
-      siteName: 'Tech Blog',
+      siteName: 'Food Blog',
       locale: locale,
       type: 'website',
       images: [
@@ -77,7 +77,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       card: 'summary_large_image',
       title: t.title,
       description: t.description,
-      creator: '@developer',
+      creator: '@foodblogger',
       images: [`${siteUrl}/images/og-blog.jpg`],
     },
     robots: {
@@ -111,22 +111,22 @@ export default async function BlogPage({ params }: BlogPageProps) {
     const categories = getCategories();
 
     // Generate JSON-LD structured data for Blog
-    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://techblog.com';
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://recipefoodblog.com';
     const jsonLd = {
       '@context': 'https://schema.org',
       '@type': 'Blog',
-      name: 'Tech Blog',
-      description: 'Browse our collection of development insights, coding tutorials, and technical articles. Find practical solutions for modern software development and discover the latest tech trends.',
+      name: 'Food Blog',
+      description: 'Browse our collection of delicious recipes, cooking techniques, and culinary articles. Find practical solutions for home cooking and discover the latest food trends.',
       url: `${siteUrl}/${locale}/blog`,
       inLanguage: locale,
       author: {
         '@type': 'Person',
-        name: 'Alex Chen',
+        name: 'Food Blogger',
         url: `${siteUrl}/${locale}/contact`
       },
       publisher: {
         '@type': 'Organization',
-        name: 'Tech Blog',
+        name: 'Food Blog',
         logo: {
           '@type': 'ImageObject',
           url: `${siteUrl}/images/logo.png`
@@ -140,7 +140,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
         datePublished: post.date,
         author: {
           '@type': 'Person',
-          name: post.author || 'Alex Chen'
+          name: post.author || 'Food Blogger'
         },
         image: post.coverImage ? `${siteUrl}${post.coverImage}` : `${siteUrl}/images/og-blog.jpg`,
         keywords: post.categories.concat(post.tags || [])
@@ -149,7 +149,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
       about: categoryIds.map(category => ({
         '@type': 'Thing',
         name: category,
-        description: `Technical content about ${category}`
+        description: `Culinary content about ${category}`
       }))
     };
 
