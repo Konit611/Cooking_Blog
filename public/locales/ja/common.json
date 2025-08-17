@@ -3,6 +3,7 @@
     "home": "ホーム",
     "about": "概要",
     "blog": "ブログ",
+    "recipes": "レシピ",
     "portfolio": "ポートフォリオ",
     "career": "キャリア",
     "contact": "お問い合わせ",
@@ -41,6 +42,18 @@
     "showingPosts": "{{count}}件の投稿",
     "inCategory": "「{{category}}」カテゴリー",
     "paginationInfo": "{{currentPage}}/{{totalPages}}ページ • {{startIndex}}-{{endIndex}}/{{total}}件の投稿を表示"
+  },
+  "recipes": {
+    "title": "レシピ",
+    "subtitle": "美味しい料理レシピと料理のコツ",
+    "allRecipes": "すべてのレシピ",
+    "noRecipesAvailable": "利用可能なレシピがありません",
+    "noRecipesInCategory": "{{category}}でレシピが見つかりません",
+    "readTime": "{{time}}分で読めます",
+    "readMore": "続きを読む",
+    "showingRecipes": "{{count}}件のレシピ",
+    "inCategory": "「{{category}}」カテゴリー",
+    "paginationInfo": "{{currentPage}}/{{totalPages}}ページ • {{startIndex}}-{{endIndex}}/{{total}}件のレシピを表示"
   },
   "categories": {
     "allCategories": "すべてのカテゴリー",

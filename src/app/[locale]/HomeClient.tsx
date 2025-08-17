@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { PostMetadata } from '@/types';
-import { HokkaidoTravel } from '@/components/HokkaidoTravel';
+import { KonitCooker } from '@/components/KonitCooker';
 
 interface HomeClientProps {
   featuredPosts: PostMetadata[];
@@ -25,5 +25,5 @@ export default function HomeClient({ locale }: HomeClientProps) {
     );
   }
 
-  return <HokkaidoTravel locale={locale} />;
+  return <KonitCooker locale={locale} />;
 } 

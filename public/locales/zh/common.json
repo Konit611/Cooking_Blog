@@ -3,6 +3,7 @@
     "home": "首页",
     "about": "关于",
     "blog": "博客",
+    "recipes": "食谱",
     "portfolio": "作品集",
     "career": "职业经历",
     "contact": "联系我",
@@ -41,6 +42,18 @@
     "showingPosts": "{{count}}篇文章",
     "inCategory": "在\"{{category}}\"分类中",
     "paginationInfo": "第{{currentPage}}/{{totalPages}}页 • 显示第{{startIndex}}-{{endIndex}}篇，共{{total}}篇文章"
+  },
+  "recipes": {
+    "title": "食谱",
+    "subtitle": "美味烹饪食谱和烹饪技巧",
+    "allRecipes": "所有食谱",
+    "noRecipesAvailable": "暂无可用食谱",
+    "noRecipesInCategory": "在{{category}}中未找到食谱",
+    "readTime": "{{time}}分钟阅读",
+    "readMore": "阅读更多",
+    "showingRecipes": "{{count}}个食谱",
+    "inCategory": "在\"{{category}}\"分类中",
+    "paginationInfo": "第{{currentPage}}/{{totalPages}}页 • 显示第{{startIndex}}-{{endIndex}}个，共{{total}}个食谱"
   },
   "categories": {
     "allCategories": "所有分类",

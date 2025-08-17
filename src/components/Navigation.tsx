@@ -2,12 +2,19 @@
 
 import { useTranslation } from './I18nProvider';
 import { LanguageSwitcher } from './LanguageSwitcher';
-import { useParams } from 'next/navigation';
+import { useParams, usePathname } from 'next/navigation';
 
 export function Navigation() {
   const { t } = useTranslation();
   const params = useParams();
   const locale = params.locale as string;
+  const pathname = usePathname();
+  
+  // 현재 페이지가 어떤 섹션인지 확인
+  const isHome = pathname === `/${locale}`;
+  const isBlog = pathname.includes(`/${locale}/blog`);
+  const isRecipes = pathname.includes(`/${locale}/recipes`);
+  const isContact = pathname.includes(`/${locale}/contact`);
 
   return (
     <header className="bg-white shadow-sm">
@@ -24,19 +31,41 @@ export function Navigation() {
           <nav className="hidden md:flex items-center space-x-8">
             <a
               href={`/${locale}`}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isHome 
+                  ? 'text-blue-600 border-b-2 border-blue-600 pb-1' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
             >
               {t('navigation.home')}
             </a>
             <a
               href={`/${locale}/blog`}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isBlog 
+                  ? 'text-blue-600 border-b-2 border-blue-600 pb-1' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
             >
               {t('navigation.blog')}
             </a>
             <a
+              href={`/${locale}/recipes`}
+              className={`font-medium transition-colors ${
+                isRecipes 
+                  ? 'text-orange-600 border-b-2 border-orange-600 pb-1' 
+                  : 'text-gray-700 hover:text-orange-600'
+              }`}
+            >
+              {t('navigation.recipes')}
+            </a>
+            <a
               href={`/${locale}/contact`}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isContact 
+                  ? 'text-blue-600 border-b-2 border-blue-600 pb-1' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
             >
               {t('navigation.contact')}
             </a>
@@ -76,19 +105,41 @@ export function Navigation() {
           <div className="flex flex-col space-y-4">
             <a
               href={`/${locale}`}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isHome 
+                  ? 'text-blue-600 border-l-4 border-blue-600 pl-3' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
             >
               {t('navigation.home')}
             </a>
             <a
+              href={`/${locale}/recipes`}
+              className={`font-medium transition-colors ${
+                isRecipes 
+                  ? 'text-orange-600 border-l-4 border-orange-600 pl-3' 
+                  : 'text-gray-700 hover:text-orange-600'
+              }`}
+            >
+              {t('navigation.recipes')}
+            </a>
+            <a
               href={`/${locale}/blog`}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isBlog 
+                  ? 'text-blue-600 border-l-4 border-blue-600 pl-3' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
             >
               {t('navigation.blog')}
             </a>
             <a
               href={`/${locale}/contact`}
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+              className={`font-medium transition-colors ${
+                isContact 
+                  ? 'text-blue-600 border-l-4 border-blue-600 pl-3' 
+                  : 'text-gray-700 hover:text-blue-600'
+              }`}
             >
               {t('navigation.contact')}
             </a>

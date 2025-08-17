@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "blog": "Blog",
+    "recipes": "Recipes",
     "portfolio": "Portfolio",
     "career": "Career",
     "contact": "Contact",
@@ -41,6 +42,18 @@
     "showingPosts": "{{count}} posts",
     "inCategory": "in \"{{category}}\"",
     "paginationInfo": "Page {{currentPage}} of {{totalPages}} • Showing {{startIndex}}-{{endIndex}} of {{total}} posts"
+  },
+  "recipes": {
+    "title": "Recipes",
+    "subtitle": "Delicious cooking recipes and culinary tips",
+    "allRecipes": "All Recipes",
+    "noRecipesAvailable": "No recipes available",
+    "noRecipesInCategory": "No recipes found in {{category}}",
+    "readTime": "{{time}} min read",
+    "readMore": "Read More",
+    "showingRecipes": "{{count}} recipes",
+    "inCategory": "in \"{{category}}\"",
+    "paginationInfo": "Page {{currentPage}} of {{totalPages}} • Showing {{startIndex}}-{{endIndex}} of {{total}} recipes"
   },
   "categories": {
     "allCategories": "All Categories",

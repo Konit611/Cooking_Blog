@@ -1,0 +1,77 @@
+[
+  {
+    "id": "korean-traditional",
+    "name": {
+      "en": "Korean Traditional",
+      "ko": "한국 전통",
+      "zh": "韩国传统",
+      "ja": "韓国伝統"
+    },
+    "description": {
+      "en": "Traditional Korean dishes and recipes",
+      "ko": "한국 전통 요리와 레시피",
+      "zh": "韩国传统菜肴和食谱",
+      "ja": "韓国伝統料理とレシピ"
+    }
+  },
+  {
+    "id": "simple-cooking",
+    "name": {
+      "en": "Simple Cooking",
+      "ko": "간단 요리",
+      "zh": "简单料理",
+      "ja": "簡単料理"
+    },
+    "description": {
+      "en": "Easy and quick recipes for everyday cooking",
+      "ko": "일상 요리를 위한 쉽고 빠른 레시피",
+      "zh": "日常烹饪的简单快速食谱",
+      "ja": "日常料理のための簡単で早いレシピ"
+    }
+  },
+  {
+    "id": "healthy-meals",
+    "name": {
+      "en": "Healthy Meals",
+      "ko": "건강 식사",
+      "zh": "健康餐点",
+      "ja": "健康的な食事"
+    },
+    "description": {
+      "en": "Nutritious and healthy meal recipes",
+      "ko": "영양가 있고 건강한 식사 레시피",
+      "zh": "营养健康的餐点食谱",
+      "ja": "栄養価が高く健康的な食事レシピ"
+    }
+  },
+  {
+    "id": "cooking-tips",
+    "name": {
+      "en": "Cooking Tips",
+      "ko": "요리 팁",
+      "zh": "烹饪技巧",
+      "ja": "料理のコツ"
+    },
+    "description": {
+      "en": "Cooking techniques, tips and tricks",
+      "ko": "요리 기법, 팁과 노하우",
+      "zh": "烹饪技巧、提示和窍门",
+      "ja": "料理の技法、コツとノウハウ"
+    }
+  },
+  {
+    "id": "vegetarian",
+    "name": {
+      "en": "Vegetarian",
+      "ko": "채식",
+      "zh": "素食",
+      "ja": "ベジタリアン"
+    },
+    "description": {
+      "en": "Vegetarian and plant-based recipes",
+      "ko": "채식과 식물성 기반 레시피",
+      "zh": "素食和植物性食谱",
+      "ja": "ベジタリアンと植物性ベースのレシピ"
+    }
+  }
+] 

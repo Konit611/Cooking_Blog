@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { Layout } from "./Layout";
 
-interface HokkaidoTravelProps {
+interface KonitCookerProps {
   locale: string;
 }
 
-export const HokkaidoTravel: React.FC<HokkaidoTravelProps> = ({ locale }) => {
+export const KonitCooker: React.FC<KonitCookerProps> = ({ locale }) => {
   // 언어별 텍스트 정의
   const translations = {
     en: {

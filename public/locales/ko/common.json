@@ -3,6 +3,7 @@
     "home": "홈",
     "about": "소개",
     "blog": "블로그",
+    "recipes": "레시피",
     "portfolio": "포트폴리오",
     "career": "경력",
     "contact": "연락처",
@@ -41,6 +42,18 @@
     "showingPosts": "{{count}}개 포스트",
     "inCategory": "\"{{category}}\" 카테고리",
     "paginationInfo": "{{currentPage}}/{{totalPages}} 페이지 • {{startIndex}}-{{endIndex}}/{{total}} 포스트"
+  },
+  "recipes": {
+    "title": "레시피",
+    "subtitle": "맛있는 요리 레시피와 요리 팁",
+    "allRecipes": "모든 레시피",
+    "noRecipesAvailable": "사용할 수 있는 레시피가 없습니다",
+    "noRecipesInCategory": "{{category}}에서 레시피를 찾을 수 없습니다",
+    "readTime": "{{time}}분 읽기",
+    "readMore": "더 읽기",
+    "showingRecipes": "{{count}}개 레시피",
+    "inCategory": "\"{{category}}\" 카테고리",
+    "paginationInfo": "{{currentPage}}/{{totalPages}} 페이지 • {{startIndex}}-{{endIndex}}/{{total}} 레시피"
   },
   "categories": {
     "allCategories": "모든 카테고리",
